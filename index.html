@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Seat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add Owl Carousel styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body class="bg-gray-100">
+
+    <!--! Navbar -->
+    <nav class="py-4 px-3 lg:px-20 fixed w-full top-0 z-50 text-white opacity-70 text-white bg-black">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4">
+            <!-- Logo -->
+            <div class="text-2xl font-bold"><span class="text-[#FFC107]">SAVORY</span>SEAT</div>
+            <div class="flex gap-2 md:gap-10">
+                <!-- Opening hours  -->
+                <div class="text-lg flex items-center gap-4">
+                    <i class="fa-solid fa-clock text-3xl text-[#FFC107]"></i>
+                    <p class="flex flex-col">
+                        <span>Opening Hours</span> <span>11:00AM - 11:00PM</span>
+                    </p>
+                </div>
+                <!-- Hotline Number -->
+                <div class="text-lg flex items-center gap-4">
+                    <i class="fa-solid fa-phone text-3xl text-[#FFC107]"></i>
+                    <p class="flex flex-col">
+                        <span>Hotline</span> <span>123-456-7890</span>
+                    </p>
+                </div>
+            </div>
+            <!-- book now btn  -->
+            <div>
+                <a href="#restaurant"><button href="#restaurant"
+                        class="bg-[#FFC107] text-white font-semibold text-xl py-2 px-6 duration-300 transition hover:bg-[#FFC907]">BOOK
+                        NOW</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!--! Banner -->
+    <section>
+        <div class="relative h-screen flex items-center justify-center"
+            style="background-image: url('banner.avif'); background-size: cover; background-position: center;">
+
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 text-white text-center">
+                <h1 class="text-6xl font-bold">Welcome to Your Savory Seat</h1>
+                <p class="max-w-2xl mt-5 text-xl text-gray-200 mx-auto px-4 md:px-0">Indulge in culinary tales at
+                    Savory Seat,
+                    where
+                    every dish narrates a story, creating moments that linger as cherished memories. Welcome to a realm
+                    of
+                    flavors and experiences, where each bite unfolds a new chapter in your culinary journey. Discover
+                    the
+                    art of savoring life's delicious narratives at Savory Seat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--! Restaurant List -->
+    <section id="restaurant">
+        <div class=" mx-auto my-16">
+            <h2 class="text-3xl font-bold mb-4 border-b-2 w-fit mx-auto border-[#FFC107]">Restaurant List</h2>
+            <p class="max-w-2xl mx-auto text-center text-lg text-[#757575] mb-4">
+                Explore our curated list of exquisite restaurants offering a delightful culinary experience. From
+                mouth-watering dishes to cozy ambiances, our restaurant partners are ready to satisfy your cravings.
+            </p>
+
+            <!-- Restaurant List -->
+            <div class="mx-auto mt-8 px-4 md:px-20 grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                <!-- ! Restaurant 1 -->
+                <div class="bg-white p-4 rounded-md shadow-md">
+                    <!-- Owl Carousel Container -->
+                    <div class="owl-carousel owl-theme">
+                        <!-- carousel img 1 -->
+                        <div class="item">
+                            <img src="https://img.freepik.com/free-vector/flat-design-food-sale-background_23-2149167390.jpg?w=1380&t=st=1700333049~exp=1700333649~hmac=ac0eb4bbdd542c61ea058989ceb0a1984decca32d7966b7ff7e0f08fed32a535"
+                                alt="Restaurant Image 1" class="w-full h-80 object-cover mb-2 rounded-md">
+                        </div>
+
+                        <!-- carousel img 2 -->
+                        <div class="item">
+                            <img src="https://img.freepik.com/free-photo/pork-hock-german-with-sauces-dark-background_1150-45508.jpg?w=1380&t=st=1700331910~exp=1700332510~hmac=47b34a7efad71f9696c7a06e20140f75dd26e7f5dfb50e27ee62cd9c5c99969c"
+                                alt="Restaurant Image 1" class="w-full h-80 object-cover mb-2 rounded-md">
+                        </div>
+
+                        <!-- carousel img 3 -->
+                        <div class="item">
+                            <img src="https://img.freepik.com/free-vector/flat-design-food-sale-banner_23-2149108165.jpg?w=1380&t=st=1700333088~exp=1700333688~hmac=f697f64cc8597e62a2db7bf4219dc812ee61824e000fb1f0f2f87177b6c7fb41"
+                                alt="Restaurant Image 1" class="w-full h-80 object-cover mb-2 rounded-md">
+                        </div>
+                    </div>
+
+                    <!-- Restaurant Information -->
+                    <h3 class="text-xl font-bold mb-2 uppercase">Savory Bites</h3>
+                    <p class="text-gray-700 mb-2"><span class="font-bold text-gray-900">Address:</span> 123 Culinary
+                        Lane,
+                        India
+                    </p>
+                    <p class="text-gray-700 mb-2"><span class="font-bold text-gray-900">Special Offer:</span> 🌟 15% off
+                        on
+                        Chef's Specials every Monday</p>
+                    <button
+                        class="bg-[#FFC107] text-white font-semibold text-xl py-2 px-6 duration-300 transition hover:bg-[#FFC907] mt-3">BOOK
+                        NOW</button>
+                </div>
+
+                <!-- ! Restaurant 2 -->
+                <div class="bg-white p-4 rounded-md shadow-md">
+                    <!-- Owl Carousel Container -->
+                    <div class="owl-carousel owl-theme">
+                        <!-- carousel img 1 -->
+                        <div class="item">
+                            <img src="https://img.freepik.com/free-psd/fast-food-restaurant-banner-template_23-2148987500.jpg?w=1380&t=st=1700332989~exp=1700333589~hmac=42aa608e4fcaece9a2bbb30f06a04936133371ac9ecd2fd0381ba6a887930972"
+                                alt="Restaurant Image 1" class="w-full h-80 object-cover mb-2 rounded-md">
+                        </div>
+
+                        <!-- carousel img 2 -->
+                        <div class="item">
+                            <img src="https://img.freepik.com/free-psd/modern-banner-template-breakfast-restaurant_23-2148351351.jpg?w=1380&t=st=1700333017~exp=1700333617~hmac=e42c2f3ed5871c1e3ac92ac0f6e8796d772f2d95409f4df4ef8f13865e47f2e2"
+                                alt="Restaurant Image 1" class="w-full h-80 object-cover mb-2 rounded-md">
+                        </div>
+
+                        <!-- carousel img 3 -->
+                        <div class="item">
+                            <img src="https://img.freepik.com/free-psd/food-menu-restaurant-facebook-cover-template_106176-384.jpg?w=1380&t=st=1700333033~exp=1700333633~hmac=4e3743f57d72cd8d3c48fe08c451ea4e497a9a5465238f54ecae37464f0c7028"
+                                alt="Restaurant Image 1" class="w-full h-80 object-cover mb-2 rounded-md">
+                        </div>
+                    </div>
+
+                    <!-- Restaurant Information -->
+                    <h3 class="text-xl font-bold mb-2 uppercase">Indian Accent</h3>
+                    <p class="text-gray-700 mb-2"><span class="font-bold text-gray-900">Address:</span> 123 Main Street
+                    </p>
+                    <p class="text-gray-700 mb-2"><span class="font-bold text-gray-900">Special Offer:</span> 🍰
+                        Complimentary artisanal dessert with every dinner reservation</p>
+                    <button
+                        class="bg-[#FFC107] text-white font-semibold text-xl py-2 px-6 duration-300 transition hover:bg-[#FFC907] mt-3">BOOK
+                        NOW</button>
+                </div>
+
+                <!-- ! Restaurant 3 -->
+                <div class="bg-white p-4 rounded-md shadow-md">
+                    <!-- Owl Carousel Container -->
+                    <div class="owl-carousel owl-theme">
+                        <!-- carousel img 1 -->
+                        <div class="item">
+                            <img src="https://img.freepik.com/free-psd/food-social-media-banner-post-template_202595-365.jpg?w=740&t=st=1700332920~exp=1700333520~hmac=e819d467241da9dfd077ac08c5a9a27d3c44ceae9e3869673939a4d69c0df092"
+                                alt="Restaurant Image 1" class="w-full h-80 object-cover mb-2 rounded-md">
+                        </div>
+
+                        <!-- carousel img 2 -->
+                        <div class="item">
+                            <img src="https://img.freepik.com/free-vector/beautiful-food-menu-design-template_23-2149061881.jpg?w=740&t=st=1700332838~exp=1700333438~hmac=5373fa93963b4643810ec0668a18695bc63eba5b2c66c5cca4cc730246c82a19"
+                                alt="Restaurant Image 1" class="w-full h-80 object-cover mb-2 rounded-md">
+                        </div>
+
+                        <!-- carousel img 3 -->
+                        <div class="item">
+                            <img src="https://img.freepik.com/free-psd/food-menu-restaurant-web-banner-template_120329-1380.jpg?w=1060&t=st=1700332897~exp=1700333497~hmac=c842846c1a624ebabe2a60ef63e6d4dc3781700b188a452ee28f46f4e8c021d2"
+                                alt="Restaurant Image 1" class="w-full h-80 object-cover mb-2 rounded-md">
+                        </div>
+                    </div>
+
+                    <!-- Restaurant Information -->
+                    <h3 class="text-xl font-bold mb-2 uppercase">Bomras</h3>
+                    <p class="text-gray-700 mb-2"><span class="font-bold text-gray-900">Address:</span> 123 Main Street
+                    </p>
+                    <p class="text-gray-700 mb-2"><span class="font-bold text-gray-900">Special Offer:</span>
+                        🎉 Enjoy our Happy Hour from 4 PM to 7 PM with half-price appetizers</p>
+                    <button
+                        class="bg-[#FFC107] text-white font-semibold text-xl py-2 px-6 duration-300 transition hover:bg-[#FFC907] mt-3">BOOK
+                        NOW</button>
+                </div>
+
+                <!-- ! Restaurant 4 -->
+                <div class="bg-white p-4 rounded-md shadow-md">
+                    <!-- Owl Carousel Container -->
+                    <div class="owl-carousel owl-theme">
+                        <!-- carousel img 1 -->
+                        <div class="item">
+                            <img src="https://img.freepik.com/free-psd/food-menu-restaurant-social-media-banner-template_120329-1372.jpg?w=740&t=st=1700332873~exp=1700333473~hmac=0a0c19fd8734c199340861aed452937ce1f3f0813260b26ce9a9d2a4ce6af6f5"
+                                alt="Restaurant Image 1" class="w-full h-80 object-cover mb-2 rounded-md">
+                        </div>
+
+                        <!-- carousel img 2 -->
+                        <div class="item">
+                            <img src="https://img.freepik.com/free-vector/beautiful-food-menu-design-template_23-2149061881.jpg?w=740&t=st=1700332838~exp=1700333438~hmac=5373fa93963b4643810ec0668a18695bc63eba5b2c66c5cca4cc730246c82a19"
+                                alt="Restaurant Image 1" class="w-full h-80 object-cover mb-2 rounded-md">
+                        </div>
+
+                        <!-- carousel img 3 -->
+                        <div class="item">
+                            <img src="https://img.freepik.com/free-psd/food-social-media-promotion-instagram-banner-post-design-template_202595-475.jpg?w=740&t=st=1700332792~exp=1700333392~hmac=c071a381f732dcaae1d700652f21940b81729bde8bde13995f74eeb9f4ee116f"
+                                alt="Restaurant Image 1" class="w-full h-80 object-cover mb-2 rounded-md">
+                        </div>
+                    </div>
+
+                    <!-- Restaurant Information -->
+                    <h3 class="text-xl font-bold mb-2 uppercase">Avartana</h3>
+                    <p class="text-gray-700 mb-2"><span class="font-bold text-gray-900">Address:</span> 123 Main Street
+                    </p>
+                    <p class="text-gray-700 mb-2"><span class="font-bold text-gray-900">Special Offer:</span> 🍽️
+                        Exclusive
+                        family meal deals for a delightful dining experience</p>
+                    <button
+                        class="bg-[#FFC107] text-white font-semibold text-xl py-2 px-6 duration-300 transition hover:bg-[#FFC907] mt-3">BOOK
+                        NOW</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; Mostakim Ahamed. <span id="currentDate" class="text-yellow-500"></span></p>
+        <p>
+            <a href="https://codepen.io/Mostakim-Ahamed/pen/oNmEXpa" class="text-blue-500 underline" target="_blank">You
+                can play
+                here</a>
+        </p>
+    </footer>
+
+    <!-- Owl Carousel Initialization Script -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                nav: true,
+                touchDrag: true,
+                mouseDrag: true,
+                navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+                dots: true,
+                dotsContainer: '.owl-dots', // Specify the dots container
+                dotsEach: 1, // Display one dot for each slide
+            });
+        });
+        // current date
+        const currentDate = new Date();
+
+        // Format the date
+        const formattedDate = currentDate.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        document.getElementById('currentDate').innerHTML = `${formattedDate}`;
+    </script>
+
+</body>
+
+</html>
